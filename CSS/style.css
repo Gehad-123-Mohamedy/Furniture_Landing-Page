@@ -1,0 +1,351 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+.container1{
+    width: 100%;
+    height: 750px;
+    background-color: aliceblue;
+}
+.header{
+
+    width: 100%;
+    height: 120px;
+    background-color: rgb(229, 226, 226);
+
+}
+
+.list{
+    position: absolute;
+    display: inline-block;
+    list-style-type: none;
+    margin-top: 50px;
+    margin-left: 8px;
+}
+.list li{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 22px;
+}
+.aa{
+  position: relative;
+}
+.aa1{
+  position: relative;
+}
+.aa::after{
+  /* border:1px sienna solid hidden; */
+    position: absolute;
+    content: "";
+    width:20%;
+    height: 0;
+    top:  0;
+    right: 0;
+ 
+
+}
+.aa1::after{
+  /* border:1px sienna solid hidden; */
+    position: absolute;
+    content: "";
+    width:20%;
+    height: 0;
+    top:  0;
+    right: 0;
+ 
+
+}
+.aa:hover::after{
+  position: absolute;
+  border:2px sienna solid;
+  text-align: center;
+  padding: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 70%;
+  height: 80%;
+
+
+  transition: 1s;
+ 
+}
+.aa1:hover::after{
+  position: absolute;
+  border:2px sienna solid;
+  text-align: center;
+  padding: auto;
+  padding-top: 10px;
+  padding-left: 10px;
+  width: 70%;
+  height: 80%;
+
+
+  transition: 1s;
+ 
+}
+
+.zero{
+
+    float: right;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(100, 62, 62);
+    color: white;
+    margin-left: 5px;
+    margin-top: 18px;
+  
+}
+.back_img{
+    width: 80%;
+    height: 550px;
+    margin:auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: blue;
+}
+.container2{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(225, 225, 225);
+}
+.line{
+    width: 120px;
+    height: 4px;
+    background-color: rgb(113, 77, 77);
+    margin-left: 680px;
+    margin-top: 20px;
+    transition: 1s;
+}
+.container2:hover .line{
+    transform: scale(2,1);
+}
+.container22{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(225, 225, 225);
+}
+.div1{
+    float: left;
+    margin: 20px;
+}
+.arr {
+    color: white;
+    background-color: red;
+    visibility: hidden;
+
+}
+.txtt:hover .arr {
+    visibility: visible;
+}
+
+.container3{
+    width: 100%;
+    height: 530px;
+    background-color: rgb(237, 231, 231);
+
+}
+.parent{
+display: flex;
+flex-direction: row;
+
+}
+.dif1{
+  background-color: rgb(233, 222, 209);
+  width: 680px;
+  height: 300px;
+  margin-left: 130px;
+  margin-top: 15px;
+
+
+
+}
+
+.dif2{
+    background-color: rgb(194, 194, 194);
+
+
+    width: 280px;
+  height: 300px;
+  margin: 0 30px;
+  margin-top: 15px;
+transition: 1s;
+
+  }
+  .dif2:hover{
+transform: scale(1.2,1.2);
+  }
+  .dif3{
+ 
+
+    width: 280px;
+    height: 300px;
+   background-color: rgb(117, 102, 82);
+   margin: 0 30px;
+   margin-top: 15px;
+   transition: 1s;
+
+  }
+  .dif3:hover{
+    transform: scale(1.2,1.2);
+      }
+
+.par{
+
+  column-count: 5;
+  column-gap: 8px;
+margin-right: 50px;
+  column-rule: 3px solid brown;
+  margin-top: 60px;
+  margin-left: 130px;
+}
+.l1{
+   
+    background-color: rgb(237, 231, 231);
+    width:100%;
+    height: 570px;
+  
+}
+.lo1{
+    position: absolute;
+    height: 113px;
+ width: 250px;
+  float: left;
+    background-color: brown;
+
+}
+.par i{
+    color: gray;
+}
+.l1:hover i{
+  transform: matrix(180deg,2,1);
+    transform: rotateX(180deg) scale(2,1);
+  color: rgb(79, 36, 36);
+
+}
+
+
+.container4{
+    width: 100%;
+    height: 1600px;
+    background-color: rgb(251, 244, 244);
+
+}
+.container4:hover .line{
+    transform: scale(2,1);
+
+}
+section{
+    position: relative;
+    transition: 1s;
+    transform-style: preserve-3d;
+    float: left;
+    margin-top: 50px;
+    margin: 90px 70px;
+    margin-left: 90px;
+}
+section ,.front,.back{
+    width: 300px;
+    height: 390px;
+    background-color: rgb(237, 255, 255);
+
+}
+.back{
+ 
+  background-image: url(../Images/chair5.jpg);
+  background-size: cover;
+ 
+
+}
+.front,.back{
+    position: absolute;
+}
+.front{
+z-index: 1;
+background-image: url(../Images/chair1.jpg);
+background-size: cover;
+backface-visibility: hidden;
+}
+section:hover .front {
+
+    transform: rotateY(180deg);
+  
+
+
+}
+
+
+.teamcol{
+    position: absolute;
+
+}
+.team-col a{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(110, 37, 37);
+    color: white;
+    display: block;
+    font-size: 25px;
+
+    margin-left: auto;
+  
+}
+.team-col a i {
+    padding-left: 8px;
+    line-height: 40px;
+
+}
+.caption{
+    width: 300px;
+    height: 90px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 90px;
+  float: left;
+
+}
+.caption2{
+    width: 300px;
+    height: 90px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 550px;
+  float: left;
+}
+.caption3{
+    width: 300px;
+    height: 90px;
+  position: absolute;
+  margin-top: 500px;
+  margin-left: 1010px;
+  float: left;
+}
+.caption4{
+    width: 300px;
+    height: 90px;
+  position: absolute;
+  margin-top: 1080px;
+  margin-left: 90px;
+  float: left;
+}
+.caption5{
+    width: 300px;
+    height: 90px;
+  position: absolute;
+  margin-top: 1080px;
+  margin-left: 550px;
+  float: left;
+}
+.caption6{
+    width: 300px;
+    height: 90px;
+
+  position: absolute;
+  margin-top: 1080px;
+  margin-left: 1010px;
+  float: left;
+}
